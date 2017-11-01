@@ -1,0 +1,41 @@
+{
+  "fluentMethods": true,
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "relationshipValidateRules": "required",
+      "relationshipName": "country",
+      "otherEntityName": "country",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "location"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "locationId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "streetAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "postalCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "city",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "stateProvince",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20171101205427",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "entityTableName": "location"
+}

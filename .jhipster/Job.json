@@ -1,0 +1,42 @@
+{
+  "fluentMethods": true,
+  "relationships": [
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityRelationshipName": "job",
+      "relationshipName": "task",
+      "otherEntityName": "task",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipName": "employee",
+      "otherEntityName": "employee",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "jobId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "jobTitle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "minSalary",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "maxSalary",
+      "fieldType": "Long"
+    }
+  ],
+  "changelogDate": "20171101205424",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "entityTableName": "job"
+}

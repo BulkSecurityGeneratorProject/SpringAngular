@@ -1,0 +1,29 @@
+{
+  "fluentMethods": true,
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "relationshipValidateRules": "required",
+      "relationshipName": "region",
+      "otherEntityName": "region",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "country"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "countryId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "countryName",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20171101205428",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "entityTableName": "country"
+}
